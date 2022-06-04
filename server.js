@@ -9,8 +9,6 @@ import handleProfileGet from "./controllers/profile.js";
 import handleImage from "./controllers/image.js";
 import handleApiCall from "./controllers/imageurl.js";
 
-app.use(cors());
-
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
 
 const appClarifai = new Clarifai.App({
