@@ -16,11 +16,9 @@ const appClarifai = new Clarifai.App({
 const db = knex({
   client: "pg",
   connection: {
-    host: "postgresql-animate-09644",
+    connectionString: process.env.DATABASE_URL,
     port: 5432,
-    user: "postgres",
-    password: "test",
-    database: "smart-brain",
+    ssl: true,
   },
 });
 
