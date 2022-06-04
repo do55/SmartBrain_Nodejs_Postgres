@@ -65,6 +65,6 @@ app.post("/imageurl", (req, res) => {
 //ENVIRONMENT VARIABLE
 const PORT = process.env.PORT;
 
-app.listen(PORT, () => {
+app.listen(PORT || 3000, () => {
   console.log(`app is running on port ${PORT}`);
 });
