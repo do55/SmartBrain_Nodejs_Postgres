@@ -12,7 +12,7 @@ import handleApiCall from "./controllers/imageurl.js";
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
 
 const appClarifai = new Clarifai.App({
-  apiKey: "06c2eb8fa8134e4d80c9e1344b44c8cd",
+  apiKey: process.env.API_CLARIFAI,
 });
 
 const db = knex({
